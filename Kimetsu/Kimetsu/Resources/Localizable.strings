@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Kimetsu
+
+  Created by Salva Moreno on 9/3/24.
+  
+*/
+
+// Splash
+"new_update" = "Nueva actualización";
+"new_update_message" = "Hay una nueva actualización disponible. Accede al AppStore para descargarla";
+"open_app_store" = "Abrir AppStore";

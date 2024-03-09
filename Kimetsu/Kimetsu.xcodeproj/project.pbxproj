@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */; };
+		B45E2F942B9CC7F00069D312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F932B9CC7F00069D312 /* ContentView.swift */; };
+		B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F952B9CC7F10069D312 /* Assets.xcassets */; };
+		B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */; };
+		B45E2FA22B9CC8310069D312 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2FA12B9CC8310069D312 /* Colors.xcassets */; };
+		B45E2FA42B9CC8650069D312 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B45E2FA32B9CC8650069D312 /* Localizable.strings */; };
+		B45E2FA72B9CD1FF0069D312 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FA62B9CD1FF0069D312 /* General.swift */; };
+		B45E2FB22B9CD44E0069D312 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FB12B9CD44E0069D312 /* Extension+Color.swift */; };
+		B45E2FB42B9CD4750069D312 /* Extension+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FB32B9CD4750069D312 /* Extension+Image.swift */; };
+		B45E2FB62B9CD5A10069D312 /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FB52B9CD5A10069D312 /* Extension+Bundle.swift */; };
+		B45E2FB92B9CD61E0069D312 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FB82B9CD61E0069D312 /* Version.swift */; };
+		B45E2FBB2B9CD63A0069D312 /* SessionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FBA2B9CD63A0069D312 /* SessionToken.swift */; };
+		B45E2FBD2B9CD6540069D312 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FBC2B9CD6540069D312 /* News.swift */; };
+		B45E2FBF2B9CD6AC0069D312 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FBE2B9CD6AC0069D312 /* Episode.swift */; };
+		B45E2FC12B9CD6F30069D312 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FC02B9CD6F30069D312 /* Character.swift */; };
+		B45E2FC42B9CD7DB0069D312 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FC32B9CD7DB0069D312 /* Endpoint.swift */; };
+		B45E2FC62B9CD7E50069D312 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FC52B9CD7E50069D312 /* HTTPHeaders.swift */; };
+		B45E2FC82B9CD7EE0069D312 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FC72B9CD7EE0069D312 /* HTTPMethod.swift */; };
+		B45E2FCA2B9CD7F60069D312 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FC92B9CD7F60069D312 /* ParameterEncoding.swift */; };
+		B45E2FCD2B9CD9C50069D312 /* VersionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FCC2B9CD9C50069D312 /* VersionEndpoint.swift */; };
+		B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimetsuApp.swift; sourceTree = "<group>"; };
+		B45E2F932B9CC7F00069D312 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B45E2F952B9CC7F10069D312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B45E2F9F2B9CC8080069D312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B45E2FA12B9CC8310069D312 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B45E2FA32B9CC8650069D312 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B45E2FA62B9CD1FF0069D312 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		B45E2FB12B9CD44E0069D312 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		B45E2FB32B9CD4750069D312 /* Extension+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Image.swift"; sourceTree = "<group>"; };
+		B45E2FB52B9CD5A10069D312 /* Extension+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
+		B45E2FB82B9CD61E0069D312 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		B45E2FBA2B9CD63A0069D312 /* SessionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionToken.swift; sourceTree = "<group>"; };
+		B45E2FBC2B9CD6540069D312 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		B45E2FBE2B9CD6AC0069D312 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		B45E2FC02B9CD6F30069D312 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		B45E2FC32B9CD7DB0069D312 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B45E2FC52B9CD7E50069D312 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		B45E2FC72B9CD7EE0069D312 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B45E2FC92B9CD7F60069D312 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		B45E2FCC2B9CD9C50069D312 /* VersionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionEndpoint.swift; sourceTree = "<group>"; };
+		B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B45E2F8B2B9CC7F00069D312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B45E2F852B9CC7F00069D312 = {
+			isa = PBXGroup;
+			children = (
+				B45E2F902B9CC7F00069D312 /* Kimetsu */,
+				B45E2F8F2B9CC7F00069D312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B45E2F8F2B9CC7F00069D312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B45E2F902B9CC7F00069D312 /* Kimetsu */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FAC2B9CD2F60069D312 /* App */,
+				B45E2FA02B9CC81D0069D312 /* Resources */,
+				B45E2FAD2B9CD3E80069D312 /* Data */,
+				B45E2FAE2B9CD3ED0069D312 /* Domain */,
+				B45E2FAF2B9CD3F40069D312 /* Presentation */,
+				B45E2FA52B9CD1E60069D312 /* Constants */,
+				B45E2F9F2B9CC8080069D312 /* Info.plist */,
+				B45E2F932B9CC7F00069D312 /* ContentView.swift */,
+				B45E2F972B9CC7F10069D312 /* Preview Content */,
+			);
+			path = Kimetsu;
+			sourceTree = "<group>";
+		};
+		B45E2F972B9CC7F10069D312 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B45E2FA02B9CC81D0069D312 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2F952B9CC7F10069D312 /* Assets.xcassets */,
+				B45E2FA12B9CC8310069D312 /* Colors.xcassets */,
+				B45E2FA32B9CC8650069D312 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B45E2FA52B9CD1E60069D312 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FA62B9CD1FF0069D312 /* General.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B45E2FAC2B9CD2F60069D312 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B45E2FAD2B9CD3E80069D312 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FC22B9CD7C40069D312 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B45E2FAE2B9CD3ED0069D312 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FB72B9CD6110069D312 /* Models */,
+				B45E2FB02B9CD4300069D312 /* Extensions */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B45E2FAF2B9CD3F40069D312 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B45E2FB02B9CD4300069D312 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FB12B9CD44E0069D312 /* Extension+Color.swift */,
+				B45E2FB32B9CD4750069D312 /* Extension+Image.swift */,
+				B45E2FB52B9CD5A10069D312 /* Extension+Bundle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B45E2FB72B9CD6110069D312 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FB82B9CD61E0069D312 /* Version.swift */,
+				B45E2FBA2B9CD63A0069D312 /* SessionToken.swift */,
+				B45E2FBC2B9CD6540069D312 /* News.swift */,
+				B45E2FBE2B9CD6AC0069D312 /* Episode.swift */,
+				B45E2FC02B9CD6F30069D312 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B45E2FC22B9CD7C40069D312 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FC32B9CD7DB0069D312 /* Endpoint.swift */,
+				B45E2FC52B9CD7E50069D312 /* HTTPHeaders.swift */,
+				B45E2FC72B9CD7EE0069D312 /* HTTPMethod.swift */,
+				B45E2FC92B9CD7F60069D312 /* ParameterEncoding.swift */,
+				B45E2FCB2B9CD7FA0069D312 /* Endpoints */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B45E2FCB2B9CD7FA0069D312 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FCC2B9CD9C50069D312 /* VersionEndpoint.swift */,
+				B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B45E2F8D2B9CC7F00069D312 /* Kimetsu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B45E2F9C2B9CC7F10069D312 /* Build configuration list for PBXNativeTarget "Kimetsu" */;
+			buildPhases = (
+				B45E2F8A2B9CC7F00069D312 /* Sources */,
+				B45E2F8B2B9CC7F00069D312 /* Frameworks */,
+				B45E2F8C2B9CC7F00069D312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kimetsu;
+			productName = Kimetsu;
+			productReference = B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B45E2F862B9CC7F00069D312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B45E2F8D2B9CC7F00069D312 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B45E2F892B9CC7F00069D312 /* Build configuration list for PBXProject "Kimetsu" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B45E2F852B9CC7F00069D312;
+			productRefGroup = B45E2F8F2B9CC7F00069D312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B45E2F8D2B9CC7F00069D312 /* Kimetsu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B45E2F8C2B9CC7F00069D312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45E2FA22B9CC8310069D312 /* Colors.xcassets in Resources */,
+				B45E2FA42B9CC8650069D312 /* Localizable.strings in Resources */,
+				B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */,
+				B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B45E2F8A2B9CC7F00069D312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45E2FA72B9CD1FF0069D312 /* General.swift in Sources */,
+				B45E2FB42B9CD4750069D312 /* Extension+Image.swift in Sources */,
+				B45E2FC82B9CD7EE0069D312 /* HTTPMethod.swift in Sources */,
+				B45E2FC12B9CD6F30069D312 /* Character.swift in Sources */,
+				B45E2FBB2B9CD63A0069D312 /* SessionToken.swift in Sources */,
+				B45E2FBF2B9CD6AC0069D312 /* Episode.swift in Sources */,
+				B45E2FBD2B9CD6540069D312 /* News.swift in Sources */,
+				B45E2FCD2B9CD9C50069D312 /* VersionEndpoint.swift in Sources */,
+				B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */,
+				B45E2FB22B9CD44E0069D312 /* Extension+Color.swift in Sources */,
+				B45E2FB62B9CD5A10069D312 /* Extension+Bundle.swift in Sources */,
+				B45E2FB92B9CD61E0069D312 /* Version.swift in Sources */,
+				B45E2F942B9CC7F00069D312 /* ContentView.swift in Sources */,
+				B45E2FC42B9CD7DB0069D312 /* Endpoint.swift in Sources */,
+				B45E2FCA2B9CD7F60069D312 /* ParameterEncoding.swift in Sources */,
+				B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */,
+				B45E2FC62B9CD7E50069D312 /* HTTPHeaders.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B45E2F9A2B9CC7F10069D312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B45E2F9B2B9CC7F10069D312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B45E2F9D2B9CC7F10069D312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kimetsu/Preview Content\"";
+				DEVELOPMENT_TEAM = 9THYRJN444;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kimetsu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salvamoreno.Kimetsu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B45E2F9E2B9CC7F10069D312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kimetsu/Preview Content\"";
+				DEVELOPMENT_TEAM = 9THYRJN444;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kimetsu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salvamoreno.Kimetsu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B45E2F892B9CC7F00069D312 /* Build configuration list for PBXProject "Kimetsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45E2F9A2B9CC7F10069D312 /* Debug */,
+				B45E2F9B2B9CC7F10069D312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B45E2F9C2B9CC7F10069D312 /* Build configuration list for PBXNativeTarget "Kimetsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45E2F9D2B9CC7F10069D312 /* Debug */,
+				B45E2F9E2B9CC7F10069D312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B45E2F862B9CC7F00069D312 /* Project object */;
+}
