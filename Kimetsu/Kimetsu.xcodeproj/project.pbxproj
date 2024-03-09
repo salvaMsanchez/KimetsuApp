@@ -28,6 +28,8 @@
 		B45E2FCA2B9CD7F60069D312 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FC92B9CD7F60069D312 /* ParameterEncoding.swift */; };
 		B45E2FCD2B9CD9C50069D312 /* VersionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FCC2B9CD9C50069D312 /* VersionEndpoint.swift */; };
 		B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */; };
+		B45E2FD12B9CE0C30069D312 /* NewsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FD02B9CE0C30069D312 /* NewsEndpoint.swift */; };
+		B45E2FD32B9CE1060069D312 /* EpisodesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FD22B9CE1060069D312 /* EpisodesEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		B45E2FC92B9CD7F60069D312 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		B45E2FCC2B9CD9C50069D312 /* VersionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionEndpoint.swift; sourceTree = "<group>"; };
 		B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		B45E2FD02B9CE0C30069D312 /* NewsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEndpoint.swift; sourceTree = "<group>"; };
+		B45E2FD22B9CE1060069D312 /* EpisodesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,8 @@
 			children = (
 				B45E2FCC2B9CD9C50069D312 /* VersionEndpoint.swift */,
 				B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */,
+				B45E2FD02B9CE0C30069D312 /* NewsEndpoint.swift */,
+				B45E2FD22B9CE1060069D312 /* EpisodesEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 				B45E2FBD2B9CD6540069D312 /* News.swift in Sources */,
 				B45E2FCD2B9CD9C50069D312 /* VersionEndpoint.swift in Sources */,
 				B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */,
+				B45E2FD12B9CE0C30069D312 /* NewsEndpoint.swift in Sources */,
+				B45E2FD32B9CE1060069D312 /* EpisodesEndpoint.swift in Sources */,
 				B45E2FB22B9CD44E0069D312 /* Extension+Color.swift in Sources */,
 				B45E2FB62B9CD5A10069D312 /* Extension+Bundle.swift in Sources */,
 				B45E2FB92B9CD61E0069D312 /* Version.swift in Sources */,
