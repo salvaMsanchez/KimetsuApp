@@ -127,28 +127,22 @@ internal extension HTTPHeader {
 extension HTTPHeader {
     /// Default Accep-Encoding header
     static let defaultAcceptEncoding: HTTPHeader = {
-        
         let encodings = ["br", "gzip", "deflate"]
         return .acceptEncoding(encodings.qualityEncoded())
-        
     }()
     
     /// Default Accept-Language header
     static let defaultAcceptLanguage: HTTPHeader = {
-        
         .acceptLanguage(Locale.preferredLanguages.prefix(6).qualityEncoded())
-        
     }()
 }
 
 extension Collection where Element == String {
     /// Add quality to values
     func qualityEncoded() -> String {
-        
         return enumerated().map { index, encoding in
             let quality = 1.0 - (Double(index) * 0.1)
             return "\(encoding);q=\(quality)"
         }.joined(separator: ", ")
-        
     }
 }

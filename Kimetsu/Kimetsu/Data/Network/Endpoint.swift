@@ -10,7 +10,6 @@ import Combine
 
 /// The protocol used to define the specifications necessary for a 'Network'.
 internal protocol Endpoint {
-    
     /// The provider's 'baseURLString'.
     var baseURLString: String { get }
     
@@ -37,11 +36,9 @@ internal protocol Endpoint {
     
     /// Show debug indo when request made
     var showDebugInfo: Bool { get }
-    
 }
 
 internal extension Endpoint {
-    
     /// Request directly from endpoint specs
     /// - Parameter type: Decodable type
     /// - Returns: AnyPublisher
@@ -79,13 +76,10 @@ internal extension Endpoint {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategy = .iso8601
         return try decoder.decode(T.self, from: data)
-        
     }
-    
 }
 
 internal extension Endpoint {
-    
     /// Create URLRequest from endpoint
     /// - Returns: URLRequest
     func makeRequest() -> URLRequest {
@@ -126,11 +120,8 @@ internal extension Endpoint {
             
         case .noEncoding:
             request.httpBody = body
-            
         }
         
         return request
-        
     }
-
 }

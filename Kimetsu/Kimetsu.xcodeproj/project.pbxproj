@@ -34,6 +34,8 @@
 		B45E2FDC2B9CE2540069D312 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FDB2B9CE2540069D312 /* RouteView.swift */; };
 		B45E2FDE2B9CE27A0069D312 /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FDD2B9CE27A0069D312 /* RouteViewModel.swift */; };
 		B45E2FE02B9CE5C20069D312 /* RoutingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FDF2B9CE5C20069D312 /* RoutingStatus.swift */; };
+		B45E2FE32B9CE7110069D312 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FE22B9CE7110069D312 /* SplashView.swift */; };
+		B45E2FE52B9CE71B0069D312 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FE42B9CE71B0069D312 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		B45E2FDB2B9CE2540069D312 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		B45E2FDD2B9CE27A0069D312 /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
 		B45E2FDF2B9CE5C20069D312 /* RoutingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingStatus.swift; sourceTree = "<group>"; };
+		B45E2FE22B9CE7110069D312 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B45E2FE42B9CE71B0069D312 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				B45E2FD92B9CE23F0069D312 /* Routing */,
+				B45E2FE12B9CE6F70069D312 /* Splash */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -232,6 +237,15 @@
 				B45E2FDD2B9CE27A0069D312 /* RouteViewModel.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		B45E2FE12B9CE6F70069D312 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FE22B9CE7110069D312 /* SplashView.swift */,
+				B45E2FE42B9CE71B0069D312 /* SplashViewModel.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45E2FE52B9CE71B0069D312 /* SplashViewModel.swift in Sources */,
 				B45E2FE02B9CE5C20069D312 /* RoutingStatus.swift in Sources */,
 				B45E2FDC2B9CE2540069D312 /* RouteView.swift in Sources */,
 				B45E2FA72B9CD1FF0069D312 /* General.swift in Sources */,
@@ -323,6 +338,7 @@
 				B45E2FD32B9CE1060069D312 /* EpisodesEndpoint.swift in Sources */,
 				B45E2FB22B9CD44E0069D312 /* Extension+Color.swift in Sources */,
 				B45E2FB62B9CD5A10069D312 /* Extension+Bundle.swift in Sources */,
+				B45E2FE32B9CE7110069D312 /* SplashView.swift in Sources */,
 				B45E2FB92B9CD61E0069D312 /* Version.swift in Sources */,
 				B45E2FC42B9CD7DB0069D312 /* Endpoint.swift in Sources */,
 				B45E2FCA2B9CD7F60069D312 /* ParameterEncoding.swift in Sources */,
