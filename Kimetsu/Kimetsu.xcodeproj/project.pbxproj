@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */; };
-		B45E2F942B9CC7F00069D312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F932B9CC7F00069D312 /* ContentView.swift */; };
 		B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F952B9CC7F10069D312 /* Assets.xcassets */; };
 		B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */; };
 		B45E2FA22B9CC8310069D312 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2FA12B9CC8310069D312 /* Colors.xcassets */; };
@@ -30,12 +29,16 @@
 		B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */; };
 		B45E2FD12B9CE0C30069D312 /* NewsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FD02B9CE0C30069D312 /* NewsEndpoint.swift */; };
 		B45E2FD32B9CE1060069D312 /* EpisodesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FD22B9CE1060069D312 /* EpisodesEndpoint.swift */; };
+		B45E2FD52B9CE1A70069D312 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FD42B9CE1A70069D312 /* Repository.swift */; };
+		B45E2FD82B9CE1E00069D312 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FD72B9CE1E00069D312 /* RepositoryProtocol.swift */; };
+		B45E2FDC2B9CE2540069D312 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FDB2B9CE2540069D312 /* RouteView.swift */; };
+		B45E2FDE2B9CE27A0069D312 /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FDD2B9CE27A0069D312 /* RouteViewModel.swift */; };
+		B45E2FE02B9CE5C20069D312 /* RoutingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2FDF2B9CE5C20069D312 /* RoutingStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimetsuApp.swift; sourceTree = "<group>"; };
-		B45E2F932B9CC7F00069D312 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B45E2F952B9CC7F10069D312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B45E2F9F2B9CC8080069D312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +61,11 @@
 		B45E2FCE2B9CDA050069D312 /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
 		B45E2FD02B9CE0C30069D312 /* NewsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEndpoint.swift; sourceTree = "<group>"; };
 		B45E2FD22B9CE1060069D312 /* EpisodesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesEndpoint.swift; sourceTree = "<group>"; };
+		B45E2FD42B9CE1A70069D312 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B45E2FD72B9CE1E00069D312 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		B45E2FDB2B9CE2540069D312 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		B45E2FDD2B9CE27A0069D312 /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
+		B45E2FDF2B9CE5C20069D312 /* RoutingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +98,13 @@
 		B45E2F902B9CC7F00069D312 /* Kimetsu */ = {
 			isa = PBXGroup;
 			children = (
+				B45E2F9F2B9CC8080069D312 /* Info.plist */,
 				B45E2FAC2B9CD2F60069D312 /* App */,
 				B45E2FA02B9CC81D0069D312 /* Resources */,
 				B45E2FAD2B9CD3E80069D312 /* Data */,
 				B45E2FAE2B9CD3ED0069D312 /* Domain */,
 				B45E2FAF2B9CD3F40069D312 /* Presentation */,
 				B45E2FA52B9CD1E60069D312 /* Constants */,
-				B45E2F9F2B9CC8080069D312 /* Info.plist */,
-				B45E2F932B9CC7F00069D312 /* ContentView.swift */,
 				B45E2F972B9CC7F10069D312 /* Preview Content */,
 			);
 			path = Kimetsu;
@@ -140,6 +147,7 @@
 		B45E2FAD2B9CD3E80069D312 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B45E2FD42B9CE1A70069D312 /* Repository.swift */,
 				B45E2FC22B9CD7C40069D312 /* Network */,
 			);
 			path = Data;
@@ -148,6 +156,7 @@
 		B45E2FAE2B9CD3ED0069D312 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B45E2FD62B9CE1D50069D312 /* Protocols */,
 				B45E2FB72B9CD6110069D312 /* Models */,
 				B45E2FB02B9CD4300069D312 /* Extensions */,
 			);
@@ -157,6 +166,7 @@
 		B45E2FAF2B9CD3F40069D312 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B45E2FD92B9CE23F0069D312 /* Routing */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -179,6 +189,7 @@
 				B45E2FBC2B9CD6540069D312 /* News.swift */,
 				B45E2FBE2B9CD6AC0069D312 /* Episode.swift */,
 				B45E2FC02B9CD6F30069D312 /* Character.swift */,
+				B45E2FDF2B9CE5C20069D312 /* RoutingStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +215,23 @@
 				B45E2FD22B9CE1060069D312 /* EpisodesEndpoint.swift */,
 			);
 			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		B45E2FD62B9CE1D50069D312 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FD72B9CE1E00069D312 /* RepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B45E2FD92B9CE23F0069D312 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				B45E2FDB2B9CE2540069D312 /* RouteView.swift */,
+				B45E2FDD2B9CE27A0069D312 /* RouteViewModel.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45E2FE02B9CE5C20069D312 /* RoutingStatus.swift in Sources */,
+				B45E2FDC2B9CE2540069D312 /* RouteView.swift in Sources */,
 				B45E2FA72B9CD1FF0069D312 /* General.swift in Sources */,
 				B45E2FB42B9CD4750069D312 /* Extension+Image.swift in Sources */,
 				B45E2FC82B9CD7EE0069D312 /* HTTPMethod.swift in Sources */,
@@ -285,18 +315,20 @@
 				B45E2FBB2B9CD63A0069D312 /* SessionToken.swift in Sources */,
 				B45E2FBF2B9CD6AC0069D312 /* Episode.swift in Sources */,
 				B45E2FBD2B9CD6540069D312 /* News.swift in Sources */,
+				B45E2FD52B9CE1A70069D312 /* Repository.swift in Sources */,
 				B45E2FCD2B9CD9C50069D312 /* VersionEndpoint.swift in Sources */,
+				B45E2FDE2B9CE27A0069D312 /* RouteViewModel.swift in Sources */,
 				B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */,
 				B45E2FD12B9CE0C30069D312 /* NewsEndpoint.swift in Sources */,
 				B45E2FD32B9CE1060069D312 /* EpisodesEndpoint.swift in Sources */,
 				B45E2FB22B9CD44E0069D312 /* Extension+Color.swift in Sources */,
 				B45E2FB62B9CD5A10069D312 /* Extension+Bundle.swift in Sources */,
 				B45E2FB92B9CD61E0069D312 /* Version.swift in Sources */,
-				B45E2F942B9CC7F00069D312 /* ContentView.swift in Sources */,
 				B45E2FC42B9CD7DB0069D312 /* Endpoint.swift in Sources */,
 				B45E2FCA2B9CD7F60069D312 /* ParameterEncoding.swift in Sources */,
 				B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */,
 				B45E2FC62B9CD7E50069D312 /* HTTPHeaders.swift in Sources */,
+				B45E2FD82B9CE1E00069D312 /* RepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
