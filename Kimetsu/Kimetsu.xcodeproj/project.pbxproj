@@ -11,6 +11,9 @@
 		B4420E5A2B9E1BD40020CE59 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E592B9E1BD40020CE59 /* SignUpView.swift */; };
 		B4420E5D2B9E1F7B0020CE59 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */; };
 		B4420E5F2B9E22BF0020CE59 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E5E2B9E22BF0020CE59 /* SignInView.swift */; };
+		B4420E612B9E24C20020CE59 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E602B9E24C20020CE59 /* TabsView.swift */; };
+		B4420E682B9E25A80020CE59 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E672B9E25A80020CE59 /* NewsView.swift */; };
+		B4420E6A2B9E25B30020CE59 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E692B9E25B30020CE59 /* EpisodesView.swift */; };
 		B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */; };
 		B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F952B9CC7F10069D312 /* Assets.xcassets */; };
 		B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */; };
@@ -47,6 +50,9 @@
 		B4420E592B9E1BD40020CE59 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		B4420E5E2B9E22BF0020CE59 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B4420E602B9E24C20020CE59 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		B4420E672B9E25A80020CE59 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		B4420E692B9E25B30020CE59 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimetsuApp.swift; sourceTree = "<group>"; };
 		B45E2F952B9CC7F10069D312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +113,47 @@
 				B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */,
 			);
 			path = AuxiliarViews;
+			sourceTree = "<group>";
+		};
+		B4420E622B9E25560020CE59 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B4420E632B9E256B0020CE59 /* News */,
+				B4420E642B9E25710020CE59 /* Episodes */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B4420E632B9E256B0020CE59 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				B4420E652B9E25900020CE59 /* Items */,
+				B4420E672B9E25A80020CE59 /* NewsView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		B4420E642B9E25710020CE59 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				B4420E662B9E259B0020CE59 /* Items */,
+				B4420E692B9E25B30020CE59 /* EpisodesView.swift */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		B4420E652B9E25900020CE59 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		B4420E662B9E259B0020CE59 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		B45E2F852B9CC7F00069D312 = {
@@ -200,6 +247,7 @@
 				B45E2FD92B9CE23F0069D312 /* Routing */,
 				B45E2FE12B9CE6F70069D312 /* Splash */,
 				B4420E562B9E15720020CE59 /* Authentication */,
+				B4420E622B9E25560020CE59 /* Core */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -262,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				B45E2FDB2B9CE2540069D312 /* RouteView.swift */,
+				B4420E602B9E24C20020CE59 /* TabsView.swift */,
 				B45E2FDD2B9CE27A0069D312 /* RouteViewModel.swift */,
 			);
 			path = Routing;
@@ -352,10 +401,12 @@
 				B45E2FE02B9CE5C20069D312 /* RoutingStatus.swift in Sources */,
 				B45E2FDC2B9CE2540069D312 /* RouteView.swift in Sources */,
 				B45E2FA72B9CD1FF0069D312 /* General.swift in Sources */,
+				B4420E6A2B9E25B30020CE59 /* EpisodesView.swift in Sources */,
 				B45E2FB42B9CD4750069D312 /* Extension+Image.swift in Sources */,
 				B45E2FC82B9CD7EE0069D312 /* HTTPMethod.swift in Sources */,
 				B45E2FC12B9CD6F30069D312 /* Character.swift in Sources */,
 				B4420E5D2B9E1F7B0020CE59 /* Buttons.swift in Sources */,
+				B4420E682B9E25A80020CE59 /* NewsView.swift in Sources */,
 				B4420E5F2B9E22BF0020CE59 /* SignInView.swift in Sources */,
 				B45E2FBB2B9CD63A0069D312 /* SessionToken.swift in Sources */,
 				B45E2FBF2B9CD6AC0069D312 /* Episode.swift in Sources */,
@@ -372,6 +423,7 @@
 				B45E2FE32B9CE7110069D312 /* SplashView.swift in Sources */,
 				B45E2FB92B9CD61E0069D312 /* Version.swift in Sources */,
 				B45E2FC42B9CD7DB0069D312 /* Endpoint.swift in Sources */,
+				B4420E612B9E24C20020CE59 /* TabsView.swift in Sources */,
 				B4420E582B9E159E0020CE59 /* SessionViewModel.swift in Sources */,
 				B45E2FCA2B9CD7F60069D312 /* ParameterEncoding.swift in Sources */,
 				B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */,
@@ -518,7 +570,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.salvamoreno.Kimetsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -548,7 +600,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.salvamoreno.Kimetsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

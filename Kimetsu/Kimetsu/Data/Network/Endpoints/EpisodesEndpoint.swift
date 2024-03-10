@@ -37,7 +37,7 @@ extension EpisodesEndpoint: Endpoint {
     
     var headers: HTTPHeaders? {
         var headers = HTTPHeaders()
-        headers.add(HTTPHeader(name: "CDS-ApiKey", value: URLs.apiKey))
+        headers.add(HTTPHeader(name: "Kimetsu-ApiKey", value: URLs.apiKey))
         
         let token = (UserDefaults.standard.object(forKey: URLs.accessToken) as? String) ?? ""
         headers.add(.authorization(bearerToken: token))

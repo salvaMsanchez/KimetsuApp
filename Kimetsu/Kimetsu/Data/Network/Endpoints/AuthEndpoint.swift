@@ -42,7 +42,7 @@ extension AuthEndpoint: Endpoint {
     
     var headers: HTTPHeaders? {
         var headers = HTTPHeaders()
-        headers.add(name: "CDS-ApiKey", value: URLs.apiKey)
+        headers.add(name: "Kimetsu-ApiKey", value: URLs.apiKey)
         
         if case .signIn(let email, let password) = self {
             headers.add(.authorization(username: email, password: password))

@@ -36,7 +36,7 @@ extension VersionEndpoint: Endpoint {
     
     var headers: HTTPHeaders? {
         HTTPHeaders([
-            .init(name: "CDS-Apikey", value: URLs.apiKey)
+            .init(name: "Kimetsu-ApiKey", value: URLs.apiKey)
         ])
     }
     

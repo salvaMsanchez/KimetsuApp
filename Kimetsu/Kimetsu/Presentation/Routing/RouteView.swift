@@ -16,9 +16,9 @@ struct RouteView: View {
             case .splash:
                 SplashView()
             case .signIn:
-                Text("Sign In View")
+                SignInView()
             case .tabs:
-                Text("Tabs View")
+                TabsView()
         }
     }
 }

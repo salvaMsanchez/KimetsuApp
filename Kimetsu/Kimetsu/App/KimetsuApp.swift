@@ -11,12 +11,14 @@ import SwiftUI
 struct KimetsuApp: App {
     // MARK: - Properties
     @StateObject var routeViewModel = RouteViewModel()
+    @StateObject var sessionViewModel = SessionViewModel()
     
     // MARK: - Main
     var body: some Scene {
         WindowGroup {
             RouteView()
                 .environmentObject(routeViewModel)
+                .environmentObject(sessionViewModel)
         }
     }
 }

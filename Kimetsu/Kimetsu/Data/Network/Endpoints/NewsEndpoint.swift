@@ -30,7 +30,7 @@ extension NewsEndpoint: Endpoint {
     
     var headers: HTTPHeaders? {
         var headers = HTTPHeaders()
-        headers.add(.init(name: "CDS-ApiKey", value: URLs.apiKey))
+        headers.add(.init(name: "Kimetsu-ApiKey", value: URLs.apiKey))
         
         let token = (UserDefaults.standard.object(forKey: URLs.accessToken) as? String) ?? ""
         headers.add(.authorization(bearerToken: token))

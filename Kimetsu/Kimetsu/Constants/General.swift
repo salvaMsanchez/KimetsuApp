@@ -15,7 +15,7 @@ struct URLs {
     
     // API
     static let baseURL = "http://127.0.0.1:8080"
-    static let api = baseURL + "/api"
-    static let apiKey = "bMUFVs9bRK631yNo/IJxKqkx4IVQ5O1rsO7y9MVMvP6SQ2bqRcuO5DADlPL1Avgy"
+    static let api = baseURL + "/api/v1"
+    static let apiKey = "008ff83d-6c1b-44fa-b7d3-4f963d6bee8d"
     static let images = baseURL
 }
