@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4420E582B9E159E0020CE59 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E572B9E159E0020CE59 /* SessionViewModel.swift */; };
 		B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */; };
 		B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F952B9CC7F10069D312 /* Assets.xcassets */; };
 		B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4420E572B9E159E0020CE59 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
 		B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimetsuApp.swift; sourceTree = "<group>"; };
 		B45E2F952B9CC7F10069D312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4420E562B9E15720020CE59 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B4420E572B9E159E0020CE59 /* SessionViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		B45E2F852B9CC7F00069D312 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 			children = (
 				B45E2FD92B9CE23F0069D312 /* Routing */,
 				B45E2FE12B9CE6F70069D312 /* Splash */,
+				B4420E562B9E15720020CE59 /* Authentication */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -341,6 +352,7 @@
 				B45E2FE32B9CE7110069D312 /* SplashView.swift in Sources */,
 				B45E2FB92B9CD61E0069D312 /* Version.swift in Sources */,
 				B45E2FC42B9CD7DB0069D312 /* Endpoint.swift in Sources */,
+				B4420E582B9E159E0020CE59 /* SessionViewModel.swift in Sources */,
 				B45E2FCA2B9CD7F60069D312 /* ParameterEncoding.swift in Sources */,
 				B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */,
 				B45E2FC62B9CD7E50069D312 /* HTTPHeaders.swift in Sources */,

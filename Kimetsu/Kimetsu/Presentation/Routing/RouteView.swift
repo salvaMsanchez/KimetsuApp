@@ -14,7 +14,7 @@ struct RouteView: View {
     var body: some View {
         switch routeViewModel.screen {
             case .splash:
-                Text("Splash View")
+                SplashView()
             case .signIn:
                 Text("Sign In View")
             case .tabs:
