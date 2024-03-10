@@ -10,6 +10,7 @@
 		B4420E582B9E159E0020CE59 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E572B9E159E0020CE59 /* SessionViewModel.swift */; };
 		B4420E5A2B9E1BD40020CE59 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E592B9E1BD40020CE59 /* SignUpView.swift */; };
 		B4420E5D2B9E1F7B0020CE59 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */; };
+		B4420E5F2B9E22BF0020CE59 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E5E2B9E22BF0020CE59 /* SignInView.swift */; };
 		B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */; };
 		B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F952B9CC7F10069D312 /* Assets.xcassets */; };
 		B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		B4420E572B9E159E0020CE59 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
 		B4420E592B9E1BD40020CE59 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		B4420E5E2B9E22BF0020CE59 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimetsuApp.swift; sourceTree = "<group>"; };
 		B45E2F952B9CC7F10069D312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,8 +94,9 @@
 		B4420E562B9E15720020CE59 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				B4420E572B9E159E0020CE59 /* SessionViewModel.swift */,
+				B4420E5E2B9E22BF0020CE59 /* SignInView.swift */,
 				B4420E592B9E1BD40020CE59 /* SignUpView.swift */,
+				B4420E572B9E159E0020CE59 /* SessionViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				B45E2FC82B9CD7EE0069D312 /* HTTPMethod.swift in Sources */,
 				B45E2FC12B9CD6F30069D312 /* Character.swift in Sources */,
 				B4420E5D2B9E1F7B0020CE59 /* Buttons.swift in Sources */,
+				B4420E5F2B9E22BF0020CE59 /* SignInView.swift in Sources */,
 				B45E2FBB2B9CD63A0069D312 /* SessionToken.swift in Sources */,
 				B45E2FBF2B9CD6AC0069D312 /* Episode.swift in Sources */,
 				B45E2FBD2B9CD6540069D312 /* News.swift in Sources */,

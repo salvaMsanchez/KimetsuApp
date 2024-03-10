@@ -1,5 +1,5 @@
 //
-//  SignUpView.swift
+//  SignInView.swift
 //  Kimetsu
 //
 //  Created by Salva Moreno on 10/3/24.
@@ -7,90 +7,77 @@
 
 import SwiftUI
 
-struct SignUpView: View {
-    // MARK: - Properties -
-    @Environment(\.dismiss) private var dismiss
-    @FocusState private var textFieldsFocused: Bool
-    
-    // MARK: - Main -
+struct SignInView: View {
     var body: some View {
-        ZStack {
+        VStack(spacing: 0) {
             GradientHeader()
                 .aspectRatio(1.75, contentMode: .fit)
-                .frame(maxHeight: .infinity, alignment: .top)
-                .opacity(textFieldsFocused ? 0.0 : 1.0)
-                .overlay {
-                    Button {
-                        dismiss()
-                    } label: {
-                        Image(.xmarkCircleFill)
-                            .font(.system(size: 25, weight: .semibold))
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                            .padding()
-                            .foregroundColor(textFieldsFocused ? Color(.label) : Color(.systemBackground))
-                    }
-                }
             
-            SignUpForm(focusState: _textFieldsFocused)
-                .frame(maxHeight: .infinity, alignment: .center)
+            SignInForm()
+                .frame(maxHeight: .infinity, alignment: .top)
         }
         .edgesIgnoringSafeArea(.top)
     }
 }
 
-private struct SignUpForm: View {
-    // MARK: - Properties -
-    @Environment(\.dismiss) private var dismiss
+struct GradientHeader: View {
+    // MARK: - Main
+    var body: some View {
+        ZStack {
+            LinearGradient(
+                colors: [.gradientBottom, .gradientTop],
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+            .mask {
+                LinearGradient(
+                    colors: [.black, .clear],
+                    startPoint: .top,
+                    endPoint: .bottom)
+            }
+            
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: 100, maxHeight: .infinity, alignment: .bottom)
+                .padding(.bottom, 40)
+        }
+    }
+}
+
+private struct SignInForm: View {
+    // MARK: - Properties
     @EnvironmentObject private var sessionViewModel: SessionViewModel
     @EnvironmentObject private var routeViewModel: RouteViewModel
     
-    @State private var name = ""
     @State private var email = ""
     @State private var password = ""
+    @State private var showSignUp = false
     
-    @FocusState var focusState: Bool
-    
-    // MARK: - Main -
+    // MARK: - Main
     var body: some View {
         VStack(spacing: 30) {
             VStack(spacing: 5) {
-                Text("sign_up")
+                Text("sign_in")
                     .font(.largeTitle)
                 
-                Text("sign_up_enter_data")
+                Text("sign_in_acces_account")
                     .font(.callout)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
             }
-            
+         
             VStack(spacing: 10) {
-                HStack(spacing: 5) {
-                    Image(.personCircleFill)
-                        .font(.system(size: 38))
-                        .foregroundColor(Color(.systemGray2))
-                        .padding(2)
-                    
-                    TextField("sign_up_name_placeholder", text: $name)
-                        .textContentType(.name)
-                        .textInputAutocapitalization(.words)
-                        .focused($focusState)
-                }
-                .background(
-                    RoundedRectangle(cornerRadius: .infinity)
-                        .fill(Color(.systemGray5))
-                )
-                
                 HStack(spacing: 5) {
                     Image(.envelopeCircleFill)
                         .font(.system(size: 38))
                         .foregroundColor(Color(.systemGray2))
                         .padding(2)
                     
-                    TextField("sign_up_email_placeholder", text: $email)
+                    TextField("sign_in_email_placeholder", text: $email)
                         .textContentType(.emailAddress)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.never)
-                        .focused($focusState)
                 }
                 .background(
                     RoundedRectangle(cornerRadius: .infinity)
@@ -103,10 +90,9 @@ private struct SignUpForm: View {
                         .foregroundColor(Color(.systemGray2))
                         .padding(2)
                     
-                    TextField("sign_up_password_placeholder", text: $password)
+                    TextField("sign_in_password_placeholder", text: $password)
                         .textContentType(.password)
                         .textInputAutocapitalization(.never)
-                        .focused($focusState)
                 }
                 .background(
                     RoundedRectangle(cornerRadius: .infinity)
@@ -119,7 +105,7 @@ private struct SignUpForm: View {
                     Task {
                         do {
                             try await sessionViewModel
-                                .signUp(name: name, email: email, password: password)
+                                .signIn(email: email, password: password)
                             
                             routeViewModel.screen = .tabs
                         } catch {
@@ -127,7 +113,7 @@ private struct SignUpForm: View {
                         }
                     }
                 } label: {
-                    Text("sign_up")
+                    Text("sign_in")
                         .font(.headline)
                         .foregroundColor(Color(.systemBackground))
                         .frame(maxWidth: .infinity)
@@ -138,13 +124,13 @@ private struct SignUpForm: View {
                 .buttonStyle(LoadingButton(isLoading: $sessionViewModel.isLoading))
                 
                 Button {
-                    dismiss()
+                    showSignUp = true
                 } label: {
-                    let noAccount = Text("sign_up_already_account")
+                    let noAccount = Text("sign_in_no_account")
                         .font(.subheadline)
                         .foregroundColor(Color(.systemGray))
                     
-                    let signUp = Text("sign_up_sign_in")
+                    let signUp = Text("sign_in_sign_up")
                         .font(.subheadline)
                         .bold()
                     
@@ -153,15 +139,15 @@ private struct SignUpForm: View {
             }
         }
         .padding(.horizontal)
+        .sheet(isPresented: $showSignUp) {
+            SignUpView()
+        }
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        Text("")
-            .sheet(isPresented: .constant(true)) {
-                SignUpView()
-                    .environmentObject(SessionViewModel())
-            }
+        SignInView()
+            .environmentObject(SessionViewModel())
     }
 }
