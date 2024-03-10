@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B4420E582B9E159E0020CE59 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E572B9E159E0020CE59 /* SessionViewModel.swift */; };
+		B4420E5A2B9E1BD40020CE59 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E592B9E1BD40020CE59 /* SignUpView.swift */; };
+		B4420E5D2B9E1F7B0020CE59 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */; };
 		B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */; };
 		B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F952B9CC7F10069D312 /* Assets.xcassets */; };
 		B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		B4420E572B9E159E0020CE59 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		B4420E592B9E1BD40020CE59 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimetsuApp.swift; sourceTree = "<group>"; };
 		B45E2F952B9CC7F10069D312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,8 +93,17 @@
 			isa = PBXGroup;
 			children = (
 				B4420E572B9E159E0020CE59 /* SessionViewModel.swift */,
+				B4420E592B9E1BD40020CE59 /* SignUpView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B4420E5B2B9E1F5E0020CE59 /* AuxiliarViews */ = {
+			isa = PBXGroup;
+			children = (
+				B4420E5C2B9E1F7B0020CE59 /* Buttons.swift */,
+			);
+			path = AuxiliarViews;
 			sourceTree = "<group>";
 		};
 		B45E2F852B9CC7F00069D312 = {
@@ -180,6 +193,7 @@
 		B45E2FAF2B9CD3F40069D312 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B4420E5B2B9E1F5E0020CE59 /* AuxiliarViews */,
 				B45E2FD92B9CE23F0069D312 /* Routing */,
 				B45E2FE12B9CE6F70069D312 /* Splash */,
 				B4420E562B9E15720020CE59 /* Authentication */,
@@ -338,6 +352,7 @@
 				B45E2FB42B9CD4750069D312 /* Extension+Image.swift in Sources */,
 				B45E2FC82B9CD7EE0069D312 /* HTTPMethod.swift in Sources */,
 				B45E2FC12B9CD6F30069D312 /* Character.swift in Sources */,
+				B4420E5D2B9E1F7B0020CE59 /* Buttons.swift in Sources */,
 				B45E2FBB2B9CD63A0069D312 /* SessionToken.swift in Sources */,
 				B45E2FBF2B9CD6AC0069D312 /* Episode.swift in Sources */,
 				B45E2FBD2B9CD6540069D312 /* News.swift in Sources */,
@@ -347,6 +362,7 @@
 				B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */,
 				B45E2FD12B9CE0C30069D312 /* NewsEndpoint.swift in Sources */,
 				B45E2FD32B9CE1060069D312 /* EpisodesEndpoint.swift in Sources */,
+				B4420E5A2B9E1BD40020CE59 /* SignUpView.swift in Sources */,
 				B45E2FB22B9CD44E0069D312 /* Extension+Color.swift in Sources */,
 				B45E2FB62B9CD5A10069D312 /* Extension+Bundle.swift in Sources */,
 				B45E2FE32B9CE7110069D312 /* SplashView.swift in Sources */,
