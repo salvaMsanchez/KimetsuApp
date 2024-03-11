@@ -27,3 +27,16 @@
 "sign_up_password_placeholder" = "Introduce tu contraseña";
 "sign_up_already_account" = "Ya tienes uan cuenta?";
 "sign_up_sign_in" = "Inicia sesión";
+
+// Tabs
+"tab_news" = "Noticias";
+"tab_episodes" = "Episodios";
+
+// News
+"news_news" = "Últimas noticias";
+
+// Episodes
+"episodes_episodes" = "Episodios";
+
+// Episode detail
+"episode_detail_characters" = "Personajes";

@@ -42,9 +42,11 @@ struct SplashView: View {
             }
             
             Image("tanjiro")
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: 336, maxHeight: .infinity, alignment: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
-                .offset(x: 10)
+                .offset(x: 70)
         }
         .task {
             do {
