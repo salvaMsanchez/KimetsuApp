@@ -14,6 +14,7 @@
 		B4420E612B9E24C20020CE59 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E602B9E24C20020CE59 /* TabsView.swift */; };
 		B4420E682B9E25A80020CE59 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E672B9E25A80020CE59 /* NewsView.swift */; };
 		B4420E6A2B9E25B30020CE59 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4420E692B9E25B30020CE59 /* EpisodesView.swift */; };
+		B45CBE7E2B9F29E400A3832F /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CBE7D2B9F29E400A3832F /* NewsItem.swift */; };
 		B45E2F922B9CC7F00069D312 /* KimetsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */; };
 		B45E2F962B9CC7F10069D312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F952B9CC7F10069D312 /* Assets.xcassets */; };
 		B45E2F992B9CC7F10069D312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E2F982B9CC7F10069D312 /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		B4420E602B9E24C20020CE59 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		B4420E672B9E25A80020CE59 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		B4420E692B9E25B30020CE59 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		B45CBE7D2B9F29E400A3832F /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		B45E2F8E2B9CC7F00069D312 /* Kimetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E2F912B9CC7F00069D312 /* KimetsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimetsuApp.swift; sourceTree = "<group>"; };
 		B45E2F952B9CC7F10069D312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		B4420E652B9E25900020CE59 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				B45CBE7D2B9F29E400A3832F /* NewsItem.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				B45E2FDE2B9CE27A0069D312 /* RouteViewModel.swift in Sources */,
 				B45E2FCF2B9CDA050069D312 /* AuthEndpoint.swift in Sources */,
 				B45E2FD12B9CE0C30069D312 /* NewsEndpoint.swift in Sources */,
+				B45CBE7E2B9F29E400A3832F /* NewsItem.swift in Sources */,
 				B45E2FD32B9CE1060069D312 /* EpisodesEndpoint.swift in Sources */,
 				B4420E5A2B9E1BD40020CE59 /* SignUpView.swift in Sources */,
 				B45E2FB22B9CD44E0069D312 /* Extension+Color.swift in Sources */,
