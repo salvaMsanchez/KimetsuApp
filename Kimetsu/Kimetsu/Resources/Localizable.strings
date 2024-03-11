@@ -25,7 +25,7 @@
 "sign_up_name_placeholder" = "Introduce tu nombre";
 "sign_up_email_placeholder" = "Introduce tu correo electrónico";
 "sign_up_password_placeholder" = "Introduce tu contraseña";
-"sign_up_already_account" = "Ya tienes uan cuenta?";
+"sign_up_already_account" = "¿Ya tienes una cuenta?";
 "sign_up_sign_in" = "Inicia sesión";
 
 // Tabs

@@ -18,7 +18,6 @@ struct SignUpView: View {
             GradientHeader()
                 .aspectRatio(1.75, contentMode: .fit)
                 .frame(maxHeight: .infinity, alignment: .top)
-                .opacity(textFieldsFocused ? 0.0 : 1.0)
                 .overlay {
                     Button {
                         dismiss()
@@ -27,7 +26,7 @@ struct SignUpView: View {
                             .font(.system(size: 25, weight: .semibold))
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
                             .padding()
-                            .foregroundColor(textFieldsFocused ? Color(.label) : Color(.systemBackground))
+                            .foregroundColor(Color(.label))
                     }
                 }
             
