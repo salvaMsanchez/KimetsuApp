@@ -25,7 +25,7 @@ struct EpisodesView: View {
                 LazyVGrid(columns: gridItems, alignment: .center, spacing: 20) {
                     ForEach(episodesViewModel.episodes, id: \.id) { episode in
                         NavigationLink {
-                            //EpisodeDetailView(id: episode.id)
+                            EpisodeDetailView(id: episode.id)
                         } label: {
                             EpisodeItem(episode: episode)
                         }

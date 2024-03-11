@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EpisodesDetailView: View {
+struct EpisodeDetailView: View {
     // MARK: - Properties -
     private let id: String
     
@@ -89,6 +89,6 @@ struct EpisodesDetailView: View {
 
 struct EpisodesDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EpisodesDetailView(id: "123")
+        EpisodeDetailView(id: "123")
     }
 }
