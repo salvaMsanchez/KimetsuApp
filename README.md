@@ -66,9 +66,9 @@
 
 1. Clona el repositorio.
 2. Abre el proyecto en XCode.
-3. Introduce la api *key*...
-3. Conecta un dispositivo iOS o utiliza el simulador.
-4. Ejecuta la aplicación.
+3. Introduce la api *key* en `Constants` > `General`. Para esta aplicación se emplea el servidor montado en Vapor que podemos encontrar [aquí](https://github.com/salvaMsanchez/Vapor-KimetsuAPI), cuya configuración y funcionalidad están explicadas detalladamente.
+4. Conecta un dispositivo iOS o utiliza el simulador.
+5. Ejecuta la aplicación.
 
 <a name="licencia"></a>
 ### Licencia
