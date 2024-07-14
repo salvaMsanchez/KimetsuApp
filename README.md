@@ -61,6 +61,14 @@
 <a name="descripcion"></a>
 ### Descripción
 
+Esta app proporciona una plataforma para acceder a noticias y detalles sobre la serie de anime Kimetsu no Yaiba. Las principales características de la app incluyen:
+
+* **Autenticación de usuarios:** gestión de registro e inicio de sesión de usuarios, con datos almacenados en una base de datos PostgreSQL.
+* **Pantalla de noticias:** presenta las últimas noticias relacionadas con Kimetsu no Yaiba, obtenidas mediante la API desarrollada en Vapor.
+* **Pantalla de episodios:** muestra una lista de episodios de la serie. Cada episodio cuenta con un detalle que proporciona información adicional, incluyendo la sinopsis y los personajes que aparecen en él.
+
+La [API desarrollada en Vapor](https://github.com/salvaMsanchez/Vapor-KimetsuAPI) maneja todas las solicitudes y respuestas, garantizando una comunicación fluida y segura. PostgreSQL se utiliza para el almacenamiento de datos de usuarios y contenido de la serie, asegurando la persistencia y accesibilidad de la información. Esta app sirve como una demostración práctica de las capacidades de la API y la gestión de usuarios.
+
 <a name="instalacion"></a>
 ### Instalación
 
