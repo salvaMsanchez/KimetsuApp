@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 <h1 align="center">
-  <strong><span>⚔️ Kimetsu App ⚔️</span></strong>
+  <strong><span>⚔️ Kimetsu no Yaiba App ⚔️</span></strong>
 </h1>
 
 ---
@@ -25,7 +25,7 @@
 ## Índice
  
 * [Herramientas](#herramientas)
-* [Proyecto: ⚔️ Kimetsu App ⚔️](#proyecto)
+* [Proyecto: ⚔️ Kimetsu no Yaiba App ⚔️](#proyecto)
 	* [Descripción](#descripcion)
 	* [Instalación](#instalacion)
 	* [Licencia](#licencia)
@@ -54,7 +54,7 @@
 * **Xcode:** 14.3.1
 
 <a name="proyecto"></a>
-## Proyecto: ⚔️ Kimetsu App ⚔️
+## Proyecto: ⚔️ Kimetsu no Yaiba App ⚔️
 
 ![Demo app iOS gif](images/demoAppIOS.gif)
 
